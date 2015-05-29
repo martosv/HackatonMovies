@@ -1,15 +1,36 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+	background-image: url('Elegant_Background-9.jpg');
+}
+
+header {
+	color: #fff;
+	text-align: center;
+	font-size: 200%;
+	font-family: ;
+}
+
+hr {
+	width: 80%;
+}
+
+.image-size {
+	width: auto;
+	height: 200px;
+	-webkit-box-shadow: 36px 25px 17px -8px rgba(0,0,0,0.65);
+	box-shadow: 36px 25px 17px -8px rgba(0,0,0,0.65);
+	border-radius: 8px;
+	margin: 12px 0px 12px;
+}
+
+.poster:hover {
+	opacity: 0.75;
+}
+
+.hidden_text {
+	visibility: hidden;
+}
+
+#question {
+	color: #ffd;
+	font-size: 150%;
+}
