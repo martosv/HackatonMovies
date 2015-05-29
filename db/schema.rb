@@ -11,11 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150529082749) do
+ActiveRecord::Schema.define(version: 20150529085536) do
 
   create_table "games", force: :cascade do |t|
     t.integer  "score"
     t.integer  "max_score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.integer  "year"
+    t.string   "criterion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
