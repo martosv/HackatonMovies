@@ -6,9 +6,9 @@ $(document).ready( function(){
 		var year_answer = $('#year').text();
 		var year_movie = $('#year1').text();
 		if (year_answer === year_movie ){
-			alert('Has acertado!!!');
+			win();
 		} else {
-			alert('La cagaste!!!');
+			lose();
 		}
 	});
 
@@ -16,9 +16,9 @@ $(document).ready( function(){
 		var year_answer = $('#year').text();
 		var year_movie = $('#year2').text();
 		if (year_answer === year_movie ){
-			alert('Has acertado!!!');
+			win();
 		} else {
-			alert('La cagaste!!!');
+			lose();
 		}
 	});
 
@@ -26,9 +26,9 @@ $(document).ready( function(){
 		var year_answer = $('#year').text();
 		var year_movie = $('#year3').text();
 		if (year_answer === year_movie ){
-			alert('Has acertado!!!');
+			win();
 		} else {
-			alert('La cagaste!!!');
+			lose();
 		}
 	});
 
@@ -36,9 +36,9 @@ $(document).ready( function(){
 		var year_answer = $('#year').text();
 		var year_movie = $('#year4').text();
 		if (year_answer === year_movie ){
-			alert('Has acertado!!!');
+			win();
 		} else {
-			alert('La cagaste!!!');
+			lose();
 		}
 	});
 
@@ -46,10 +46,20 @@ $(document).ready( function(){
 		var year_answer = $('#year').text();
 		var year_movie = $('#year5').text();
 		if (year_answer === year_movie ){
-			alert('Has acertado!!!');
+			win();
 		} else {
-			alert('La cagaste!!!');
+			lose();
 		}
 	});
 
+	function win(){
+		alert('Has acertado!!!');
+		location.reload();
+	};
+
+	function lose(){
+		alert('La cagaste!!!');
+		location.reload();
+	}
+	
 });
